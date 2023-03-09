@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portopolio</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <style>
+        header{
+            background-color: #ccc;
+            min-height: 500px;
+        }
+
+        header figure img{
+            width: 200px;
+            
+        }
+
+        .about{
+            min-height: 500px;
+        }
+
+        hr{
+            width: 250px;
+            border-top: 4px solid #555;
+        }
+
+        .portopolio{
+            min-height: 500px;
+            background-color: #ccc;
+        }
+
+       .contact{
+        min-height: 700px;
+       }
+
+       footer{
+        height: 100px;
+       }
+
+       footer .hover {
+        color: white;
+       }
+
+       footer .hover:hover{
+        color: red;
+       }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+    <header id="header" class="text-center p-3">
+        <figure>
+            <img src="img/irmansyah.jpg" alt="Irmansyah" class="border border-dark rounded-circle border-3">
+        </figure>
+        <h1 class="mt-4 display-2">Irmansyah</h1>
+        <p class="display-6">Web Developer & Android Developer</p>
+    </header>
+
+    <!-- end header -->
+
+    <section id="about" class="about container-fluid mt-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>About</h1>
+                <hr class="mx-auto">
+            </div>
+        </div>
+
+        <div class="row p-4">
+            <div class="col-md p-5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil et rem illum repudiandae veniam! Ad, est quasi? Autem, aliquam inventore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam alias atque et magnam pariatur similique! Porro quasi, enim facilis amet eveniet corporis eaque commodi. Ad harum assumenda inventore beatae placeat!</p>
+            </div>
+            <div class="col-md p-5">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut repellendus inventore fugiat, unde possimus, animi deleniti error iure quos quaerat rerum ullam velit vitae delectus repellat ex doloremque qui nam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consequatur molestiae error saepe aliquid magnam cumque harum veritatis voluptas possimus repellat vel, ullam eius! Illum voluptatum porro nemo molestias minima.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portopolio" class="portopolio container-fluid p-4">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Portofolio</h1>
+                <hr class="mx-auto">
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4 text-center">
+                <a href="" class="text-center">
+                    <img src="img/5 (1).jpg" alt="" class="img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="">
+                    <img src="img/2 (1).jpg" alt="" class="img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="">
+                    <img src="img/3 (1).jpg" alt="" class="img-thumbnail">
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <a href="" class="">
+                    <img src="img/5 (1).jpg" alt="" class="img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="">
+                    <img src="img/2 (1).jpg" alt="" class="img-thumbnail">
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="">
+                    <img src="img/3 (1).jpg" alt="" class="img-thumbnail">
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact container-fluid mt-2 p-4">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Contact</h1>
+                <hr class="mx-auto">
+            </div>
+        </div>
+
+        <div class="row mt-5">
+
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4 ">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Masukan nama anda" autocomplete="off"> 
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Kata sandi" autocomplete="off">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Pesan</label>
+                        <textarea name="message" id="message" rows="10" placeholder="Masukan pesan anda disini" class="form-control"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary" name="submit">Kirim Pesan</button>
+                </form>
+            </div>
+
+            <div class="col-md-4"></div>
+
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-dark text-white container-fluid pt-4">
+        <div class="row">
+            <div class="col-md text-center">
+                <p><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                    <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+                  </svg></span> 2022 Built By <a href="https://www.instagram.com/irmansyah707/" class="text-decoration-none hover">Irmansyah</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="java.js"></script>
+</body>
+</html>

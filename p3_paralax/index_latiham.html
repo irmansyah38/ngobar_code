@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <style>
+
+        body{
+            height: 2000px;
+            transform: translate();
+        }
+
+        .kotak{
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <main class="containerborder mt-5 text-center">
+        <h1 class="display-2">Hello World</h1>
+        <div class="kotak shadow mx-auto mb-2 rounded"></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum voluptatum temporibus sapiente nemo odit facilis ipsum, quaerat harum! Similique repudiandae vitae incidunt officia fugit voluptatem qui vero non, architecto aspernatur!</p>
+    </main>
+
+<script src="../jquery/jquery.js"></script>
+<script>
+
+    $(document).ready(function () {
+       
+        $(window).scroll(function () {
+            
+            let wScroll = $(window).scrollTop();
+
+            $("h1").css('transform',`translate(0 , ${wScroll/1.5}%)`);
+
+            $('.kotak').css('transform',`translate(0 , ${wScroll/5}%)`);
+            
+
+        })
+
+    });
+
+</script>
+</body>
+</html>
